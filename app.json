@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "STSWENG-MCO-G7",
-    "slug": "STSWENG-MCO-G7",
+    "name": "Mang Juan Admin",
+    "slug": "mang-juan-admin",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
