@@ -2,6 +2,7 @@ import { useFonts } from "expo-font";
 import { Slot } from "expo-router";
 import * as ExpoSplashScreen from 'expo-splash-screen';
 import { useEffect } from "react";
+import { KeyboardProvider } from "react-native-keyboard-controller";
 import "../global.css";
 
 ExpoSplashScreen.preventAutoHideAsync();
@@ -14,7 +15,11 @@ export default function RootLayout() {
 		if (fontLoaded || fontError)
 			ExpoSplashScreen.hideAsync();
 	}, [fontLoaded, fontError]);
-	return !(fontLoaded || fontError)
-		? null
-		: <Slot />;
+	return (
+		<KeyboardProvider>
+			{ !(fontLoaded || fontError)
+				? null
+				: <Slot /> }
+		</KeyboardProvider>
+	);
 }
