@@ -1,56 +1,28 @@
-# Welcome to your Expo app 👋
-
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Mang Juan (STSWENG-MCO-G7, 021)
+## Running via Expo Go's QR feature
+1. Ensure Expo Go v58 at minimum is installed on your mobile device.
+    - Download the latest version of Expo Go here: https://expo.dev/go
+    - **NOTE:** Google Play Store's Expo Go is delayed of updates. Best to download it on the Expo website.
+2. Run app in the Command Prompt or console via `npx expo start -c`.
+3. Once the QR code appears, scan via Expo Go.
+4. Wait for the app to bundle and load onto your mobile device.
+## Running via Expo through Developer Options
+### Enabling Developer Options
+1. Navigate to your mobile device's `Settings > About Phone > Software Information`
+    - **NOTE:** `Software Information` may differ on other devices, e.g. in Xiaomi, it is called `Detailed info and specs`.
+2. Find `Build Number` and tap it 7 times in rapid succession.
+    - **NOTE:** `Build Number` may differ on other devices, e.g. in Xiaomi, it is called `OS version`.
+### Enabling USB debugging via Developer Options
+3. With developer options enabled, navigate to `Settings > Developer Options`.
+    - **NOTE:** Where `Developer Options` is located is dependent on the model of your mobile device, e.g. in Xiaomi, it is located in `Additional settings > Developer Options`. It is suggested that you use the search bar feature of your `Settings` to find it easily.
+4. Enable `USB Debugging`.
+### Running via Expo
+5. Connect your mobile device to your PC using a compatible charger wire.
+6. Run app in the Command Prompt or console via `npx expo start -c`.
+7. Once loading finishes, press `Shift + A`.
+8. Select your connected mobile device.
+9. Wait for the app to bundle and load onto your mobile device.
+    - **NOTE:** Permissions may be prompted on your mobile device during bundling. Ensure reading them and allowing only the permissions that are related to the app.
+## Stopping Expo server
+1. Simply press `Ctrl + C` on the console where Expo is running.
+2. Disconnect associated mobile device(s) from PC.
