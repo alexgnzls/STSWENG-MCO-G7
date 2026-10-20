@@ -5,7 +5,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
 export default function Login() {
     /* Value constants */
     const KASV_BTMOFFSET = 100;
-    const BG_COLOR = 'rgb(234,179,8)';
+    const PEYE_COLOR = 'rgb(234,179,8)';
     const PEYE_WH = 24;
     const FLD_STYLE = 'w-full bg-white border-2 border-gray-300 rounded-xl px-4 py-3 ' +
         'text-gray-800 text-lg font-inter-regular font-light transition duration-800 ' +
@@ -21,7 +21,7 @@ export default function Login() {
             bottomOffset={KASV_BTMOFFSET}
             keyboardShouldPersistTaps='handled'
             contentContainerStyle={{ flexGrow: 1, alignItems: 'center', }}
-            className={`p-4 flex-1 bg-[${BG_COLOR}]`}
+            className='p-4 flex-1 bg-yellow-500'
         >
             <Image
                 className='scale-[0.80]'
@@ -52,8 +52,8 @@ export default function Login() {
                         { password.length > 0 &&
                             <Pressable className='absolute p-[0.75em]' onPress={TogglePassword}>
                                 { isHidePassword
-                                    ? <Eye width={PEYE_WH} height={PEYE_WH} color={BG_COLOR} />
-                                    : <EyeClosed width={PEYE_WH} height={PEYE_WH} color={BG_COLOR} />
+                                    ? <Eye width={PEYE_WH} height={PEYE_WH} color={PEYE_COLOR} />
+                                    : <EyeClosed width={PEYE_WH} height={PEYE_WH} color={PEYE_COLOR} />
                                 }
                             </Pressable>
                         }
