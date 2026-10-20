@@ -42,7 +42,8 @@
             "./assets/fonts/Inter-Regular.ttf"
           ]
         }
-      ]
+      ],
+      "expo-image"
     ],
     "experiments": {
       "typedRoutes": true,
