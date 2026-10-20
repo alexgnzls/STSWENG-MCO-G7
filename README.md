@@ -1,7 +1,9 @@
 # Mang Juan (STSWENG-MCO-G7, 021)
 ## Running via Expo Go's QR feature
 1. Ensure Expo Go v58 at minimum is installed on your mobile device.
-    - Download the latest version of Expo Go here: https://expo.dev/go
+    - Download the latest `.apk` version of Expo Go here:
+      
+      https://expo.dev/go?sdkVersion=58&platform=android&device=false
     - **NOTE:** Google Play Store's Expo Go is delayed of updates. Best to download it on the Expo website.
 2. Run app in the Command Prompt or console via `npx expo start -c`.
 3. Once the QR code appears, scan via Expo Go.
