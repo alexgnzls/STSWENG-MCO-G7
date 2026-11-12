@@ -1,1 +1,26 @@
 @import 'tailwindcss';
+
+@theme {
+    --color-brand: #F0B100;
+    --color-cream: #FFFEE3;
+    --color-ink: #101828;
+    --font-sans: ui-sans-serif, system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+    /* Cream canvas keeps white cards readable without heavy borders or shadows. */
+    body {
+        @apply bg-cream font-sans text-ink antialiased;
+    }
+
+    /* Keyboard focus must stay visible on every interactive element. */
+    :focus-visible {
+        outline: 2px solid var(--color-brand);
+        outline-offset: 2px;
+    }
+
+    /* Aligned digits make payroll columns scannable. */
+    table {
+        font-variant-numeric: tabular-nums;
+    }
+}
