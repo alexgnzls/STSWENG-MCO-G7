@@ -10,6 +10,7 @@ on:
       - "chore/**"
       - "release/**"
       - "hotfix/**"
+      - "ci/**"
 
   pull_request:
     branches:
@@ -46,7 +47,7 @@ jobs:
           SOURCE_BRANCH: ${{ github.head_ref}}
         shell: bash
         run: |
-          if [[ ! "$SOURCE_BRANCH" =~ ^(feat|bugfix|chore|refactor|test|doc|release|hotfix)/.+$ ]]; then
+          if [[ ! "$SOURCE_BRANCH" =~ ^(feat|bugfix|chore|refactor|test|doc|release|hotfix|ci)/.+$ ]]; then
             echo "::error::PR source branch '$SOURCE_BRANCH' must use an approved prefix (e.g. feat/D02-support-cases)."
             exit 1
           fi
